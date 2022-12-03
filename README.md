@@ -1,31 +1,20 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Supabase Sample Integration API
 
-First, run the development server:
+This API exists so the sample integration will work on both dev/local and production. At the time of this integration's development, a locally hosted instance of Supabase could only serve one edge function at a time. Hosting a seperate API allows us to avoid this limitation without resorting to pasting working logic from the Next API to a Supabase Edge Function.
+
+## 🚦Getting Started
+
+First, make a copy of [`.env.example`](https://github.com/OneSignalDevelopers/onesignal-supabase-sample-integration-api/blob/main/.env.example) and set each variable
+
+Then, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
