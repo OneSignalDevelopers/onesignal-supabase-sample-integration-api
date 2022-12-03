@@ -16,9 +16,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # Supabase Sample Integration API
 
-This API exists so the sample integration will work on both dev/local and production. 
+OneSignal makes engaging customers simple and is the fastest, most reliable service to send push notifications, in-app messages, SMS, and emails.
 
-The event-handler implemented in this project can be implemented in your Supabase project if preferred, but it may impact your dev experience because locally hosted instances of Supabase can only serve one edge function at a time. Hosting a seperate API allows us to avoid this limitation without resorting to pasting working logic from the Next API to a Supabase Edge Function.
+This repo contains the companion API to the [Onesignal + Supabase Sample Integration guide](https://github.com/onesignaldevelopers/onesignal-supabase-sample-integration-supabase).
+
+This project exists solely so the sample integration works in both local and production environments. While the event-handler implemented in this project can be implemented Supabase, it may negatively impact your dev experience due to a constraint with Supabase hosted on Docker: it can only serve one edge function at a time. Hosting a seperate API is a simple work-around for the limitation.
 
 ## How it works
 
