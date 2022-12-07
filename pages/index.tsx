@@ -17,11 +17,19 @@ export default function Home() {
 
         <p className={styles.description}>
           Get started by starting by running the companion{" "}
-          <a href="https://github.com/OneSignalDevelopers/onesignal-supabase-sample-integration-supabase">
+          <a
+            href="https://github.com/OneSignalDevelopers/onesignal-supabase-sample-integration-supabase/blob/main/README.md"
+            target="_blank"
+            rel="noreferrer"
+          >
             Supabase
           </a>{" "}
           project and the{" "}
-          <a href="https://github.com/OneSignalDevelopers/onesignal-supabase-sample-integration-app">
+          <a
+            href="https://github.com/OneSignalDevelopers/onesignal-supabase-sample-integration-app/blob/main/README.md"
+            target="_blank"
+            rel="noreferrer"
+          >
             app
           </a>
           .
