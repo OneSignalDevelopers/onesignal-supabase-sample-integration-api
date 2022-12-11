@@ -23,11 +23,10 @@ export default async function handler(
       StripeWebhookSecret
     )
 
-    console.log("Stripe Event\n\t", event)
-
     switch (event.type) {
       case "payment_intent.succeeded":
-        const { id, customer, amount, currency } = req.body.data.object
+        console.log("Stripe Event\n\t", event)
+        const { id, customer, amount, currency } = event.data.object as any
         const prismaResult = await Supabase.from("orders").insert({
           stripe_pi_id: id,
           stripe_customer_id: customer,
