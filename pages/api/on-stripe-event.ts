@@ -43,6 +43,6 @@ export default async function handler(
     }
   } catch (err) {
     console.error(`Fatal error - ${err}`)
-    res.status(500)
+    res.status(500).send({ message: JSON.stringify(err) })
   }
 }
